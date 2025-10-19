@@ -24,8 +24,8 @@ public class Win32 {
 # --- USER CONFIGURATION ---
 $AppName = "PaintDotNet"
 $SaveKey = "^s"  # CORRECTED: '^' represents the Control key (Ctrl+S)
-$IdleThresholdSeconds = 30  # Save if user is idle for 30 seconds
-$CheckIntervalSeconds = 60   # Check every 1 minute
+$IdleThresholdSeconds = 15  # Save if user is idle for 15 seconds
+$CheckIntervalSeconds = 30   # Check every halfa minute
 # --------------------------
 
 Write-Host "Paint.NET AutoSave Utility Started."
@@ -83,4 +83,5 @@ while ($true) {
         # Wait the full interval if Paint.NET isn't in focus
         Start-Sleep -Seconds $CheckIntervalSeconds
     }
+
 }
