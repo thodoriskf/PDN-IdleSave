@@ -19,7 +19,7 @@ A lightweight Windows helper that automatically saves your work in **Paint.NET**
 3. Double-click `run-autosave.bat` to start the utility.
 4. Keep the console window open while working in Paint.NET.
 
-###Option 2:
+### Option 2:
 1. Download `run-both.bat` and  `AutoSave-PaintDotNet.ps1` 
 2. Edit the `run-both.bat` and change the path to the powershell script and (if necessary) to the paintnet application executable and save.
 3. Launch using `run-both.bat` if you wish to run Paint.NET with autosave.
