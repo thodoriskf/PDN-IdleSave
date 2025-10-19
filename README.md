@@ -13,11 +13,17 @@ A lightweight Windows helper that automatically saves your work in **Paint.NET**
 - **run-both.bat**- Launches Paintnet and the launcher at the same time( Note: Adjust the path ,it will be show below)
 
 ## Setup & Run
-1. Place both files in the same folder.
-2. Double-click `run-autosave.bat` to start the utility.
-3. Keep the console window open while working in Paint.NET.
+### Option 1: 
+1. Download `run-autosave.bat` and `AutoSave-PaintDotNet.ps1` 
+2. Place both files in the same folder.
+3. Double-click `run-autosave.bat` to start the utility.
+4. Keep the console window open while working in Paint.NET.
 
-OR ALTERNATIVELY YOU CAN LAUNCH IT THIS WAY:
+###Option 2:
+1. Download `run-both.bat` and  `AutoSave-PaintDotNet.ps1` 
+2. Edit the `run-both.bat` and change the path to the powershell script and (if necessary) to the paintnet application executable and save.
+3. Launch using `run-both.bat` if you wish to run Paint.NET with autosave.
+4. Keep the console window open while working in Paint.NET.
   
 
 > If PowerShell execution is restricted, the batch file already uses `-ExecutionPolicy Bypass`.
@@ -26,7 +32,7 @@ OR ALTERNATIVELY YOU CAN LAUNCH IT THIS WAY:
 Open `AutoSave-PaintDotNet.ps1` and adjust these values near the top:
 
 ```powershell
-$AppName = "PaintDotNet"          # Process name for Paint.NET
+$AppName = "PaintDotNet"           # Process name for Paint.NET
 $SaveKey = "^s"                    # Ctrl+S (SendKeys format)
 $IdleThresholdSeconds = 30         # Save when idle ≥ 30s
 $CheckIntervalSeconds = 60         # Recheck every 60s
