@@ -34,5 +34,5 @@ Open `AutoSave-PaintDotNet.ps1` and adjust these values near the top:
 ```powershell
 $AppName = "PaintDotNet"           # Process name for Paint.NET
 $SaveKey = "^s"                    # Ctrl+S (SendKeys format)
-$IdleThresholdSeconds = 30         # Save when idle ≥ 30s
-$CheckIntervalSeconds = 60         # Recheck every 60s
+$IdleThresholdSeconds = 15         # Save when idle ≥ 15s
+$CheckIntervalSeconds = 30         # Recheck every 30s
